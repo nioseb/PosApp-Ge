@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3D9225BD-AEFC-41CC-A875-315C687B8D24}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Shop.My.MyApplication</StartupObject>
+    <RootNamespace>Shop</RootNamespace>
+    <AssemblyName>Shop</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Shop.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Shop.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.DRAWERLib, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AxInterop.DRAWERLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.MercFPrtX, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="AxInterop.OposCashDrawer_1_10_Lib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="AxInterop.SCANNERLib, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AxInterop.SCANNERLib.dll</HintPath>
+    </Reference>
+    <Reference Include="daisyFP, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="DaisyFPCtrl, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="eptcvx, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="GCAnator, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Shared.v11.1, Version=11.1.20111.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.Misc.v11.1, Version=11.1.20111.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinDataSource.v11.1, Version=11.1.20111.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinDock.v11.1, Version=11.1.20111.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v11.1, Version=11.1.20111.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v11.1, Version=11.1.20111.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinListView.v11.1, Version=11.1.20111.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinTree.v11.1, Version=11.1.20111.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.v11.1, Version=11.1.20111.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Interop.MercFPrtX, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Interop.OposCashDrawer_1_10_Lib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="PosiflexDrawerTest, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="PosManualSync, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WincorDrawerCtrl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmBookingsReport.Designer.vb">
+      <DependentUpon>frmBookingsReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookingsReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCardPayPrompt.Designer.vb">
+      <DependentUpon>frmCardPayPrompt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCardPayPrompt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Favtorizacia.Designer.vb">
+      <DependentUpon>Favtorizacia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Favtorizacia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finputi.Designer.vb">
+      <DependentUpon>Finputi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Finputi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Flist.Designer.vb">
+      <DependentUpon>Flist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Flist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fmain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fmain.Designer.vb">
+      <DependentUpon>Fmain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fmesigi.Designer.vb">
+      <DependentUpon>Fmesigi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fmesigi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMonitor.Designer.vb">
+      <DependentUpon>frmMonitor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMonitor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMonitorCheck.Designer.vb">
+      <DependentUpon>frmMonitorCheck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMonitorCheck.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNumpad.Designer.vb">
+      <DependentUpon>frmNumpad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNumpad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrderTablesSagaOne.Designer.vb">
+      <DependentUpon>frmOrderTablesSagaOne.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrderTablesSagaOne.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrderTables.Designer.vb">
+      <DependentUpon>frmOrderTables.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrderTables.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTerminalFuncs.Designer.vb">
+      <DependentUpon>frmTerminalFuncs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTerminalFuncs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThumbs.Designer.vb">
+      <DependentUpon>frmThumbs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmThumbs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSaleSublines.Designer.vb">
+      <DependentUpon>FSaleSublines.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FSaleSublines.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fsettings.Designer.vb">
+      <DependentUpon>Fsettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fsettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fstart.Designer.vb">
+      <DependentUpon>Fstart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fstart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FUserSelect.Designer.vb">
+      <DependentUpon>FUserSelect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FUserSelect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_FP_SC_DR.Designer.vb">
+      <DependentUpon>F_FP_SC_DR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_FP_SC_DR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_NCR_CLS.Designer.vb">
+      <DependentUpon>F_NCR_CLS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="F_NCR_CLS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridItemInfo.vb" />
+    <Compile Include="MTGCComboBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="M_Daisy.vb" />
+    <Compile Include="M_msg_inp.vb" />
+    <Compile Include="M_SLP.vb" />
+    <Compile Include="M_SQL.vb" />
+    <Compile Include="M_Transfer.vb" />
+    <Compile Include="M_Z.vb" />
+    <Compile Include="OrderTable.vb" />
+    <Compile Include="OrderTableGroup.vb" />
+    <Compile Include="pos_dbDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pos_dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="pos_dbDataSet.vb">
+      <DependentUpon>pos_dbDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmBookingsReport.resx">
+      <DependentUpon>frmBookingsReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCardPayPrompt.resx">
+      <DependentUpon>frmCardPayPrompt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Favtorizacia.resx">
+      <DependentUpon>Favtorizacia.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finputi.resx">
+      <DependentUpon>Finputi.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flist.resx">
+      <DependentUpon>Flist.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fmain.resx">
+      <DependentUpon>Fmain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fmesigi.resx">
+      <DependentUpon>Fmesigi.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMonitor.resx">
+      <DependentUpon>frmMonitor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMonitorCheck.resx">
+      <DependentUpon>frmMonitorCheck.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNumpad.resx">
+      <DependentUpon>frmNumpad.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrderTablesSagaOne.resx">
+      <DependentUpon>frmOrderTablesSagaOne.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrderTables.resx">
+      <DependentUpon>frmOrderTables.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTerminalFuncs.resx">
+      <DependentUpon>frmTerminalFuncs.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThumbs.resx">
+      <DependentUpon>frmThumbs.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSaleSublines.resx">
+      <DependentUpon>FSaleSublines.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fsettings.resx">
+      <DependentUpon>Fsettings.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fstart.resx">
+      <DependentUpon>Fstart.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FUserSelect.resx">
+      <DependentUpon>FUserSelect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_FP_SC_DR.resx">
+      <DependentUpon>F_FP_SC_DR.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_NCR_CLS.resx">
+      <DependentUpon>F_NCR_CLS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="pos_dbDataSet.xsc">
+      <DependentUpon>pos_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="pos_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pos_dbDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pos_dbDataSet.xss">
+      <DependentUpon>pos_dbDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="DRAWERLib">
+      <Guid>{80E3BA10-326B-11D0-94DE-0000E8A5A107}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="OposCashDrawer_1_10_Lib">
+      <Guid>{CCB90040-B81E-11D2-AB74-0040054C3719}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="SCANNERLib">
+      <Guid>{80E3BA60-326B-11D0-94DE-0000E8A5A107}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apple2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apple.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="Resources\vashli.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-arrow-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double-arrow-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\script-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator_accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_tblgrp_bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_tblgrp_bar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_tblgrp_verandah.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\applications.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\applications1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_checklist_date_schedule_event.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_date_schedule_event_time.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_date_schedule_event_time_24.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
